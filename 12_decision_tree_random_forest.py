@@ -16,9 +16,7 @@ def decision_tree_model():
     dt_model.fit(X_train, y_train)
     y_pred = dt_model.predict(X_test)
     print("Accuracy:", accuracy_score(y_test, y_pred))
-    print("
-Classification Report:
-", classification_report(y_test, y_pred))
+    print("Classification Report:", classification_report(y_test, y_pred))
     plt.figure(figsize=(16, 10))
     plot_tree(dt_model, feature_names=[f'Feature {i}' for i in range(X.shape[1])],
               class_names=['Class 0', 'Class 1'], filled=True, rounded=True)
