@@ -24,8 +24,7 @@ def decision_tree_model():
     plt.show()
 
 def random_forest_model():
-    print("
-=== Random Forest Classifier ===")
+    print("=== Random Forest Classifier ===")
     X, y = make_classification(n_samples=300, n_features=4, n_informative=3, n_redundant=0, random_state=42)
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
@@ -33,9 +32,7 @@ def random_forest_model():
     rf_model.fit(X_train, y_train)
     y_pred = rf_model.predict(X_test)
     print("Accuracy:", accuracy_score(y_test, y_pred))
-    print("
-Classification Report:
-", classification_report(y_test, y_pred))
+    print("Classification Report:", classification_report(y_test, y_pred))
 
     feature_importances = rf_model.feature_importances_
     plt.bar(range(len(feature_importances)), feature_importances, tick_label=[f'Feature {i}' for i in range(len(feature_importances))])
