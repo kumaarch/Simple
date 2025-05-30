@@ -51,3 +51,6 @@ BEGIN
     WHERE a.Author_Name = author_name;
 END$$
 DELIMITER ;
+
+-- Usage 
+CALL GetBooksByAuthor('J.K. Rowling'); 
