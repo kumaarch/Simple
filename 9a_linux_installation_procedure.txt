@@ -1,0 +1,35 @@
+Step-by-Step Procedure to Install Linux (Ubuntu) on Windows using VirtualBox:
+
+1. Install VirtualBox:
+   - Download from https://www.virtualbox.org/
+   - Run the installer and follow the instructions.
+
+2. Download Ubuntu ISO:
+   - Go to https://ubuntu.com/download/desktop
+   - Download Ubuntu Desktop LTS version.
+
+3. Create a New Virtual Machine in VirtualBox:
+   - Name: Ubuntu
+   - Type: Linux
+   - Version: Ubuntu (64-bit)
+
+4. Allocate RAM:
+   - Minimum: 2048 MB (Recommended: 4096 MB)
+
+5. Create a Virtual Hard Disk:
+   - Choose VDI
+   - Dynamically allocated
+   - Size: At least 20 GB
+
+6. Mount Ubuntu ISO:
+   - Settings → Storage → Choose ISO under Controller: IDE
+
+7. Start VM and Install Ubuntu:
+   - Follow Ubuntu installer instructions
+   - Set username and password
+
+8. After Installation:
+   - Remove ISO (Devices → Optical Drives → Remove disk)
+   - Restart VM
+
+Ubuntu is now installed as a guest OS on your Windows system!
